@@ -1,6 +1,6 @@
 {
-  "name": "dooda-toolkit",
-  "version": "1.0.12",
+  "name": "doodaswap-ui",
+  "version": "1.0.15",
   "description": "Dooda frontend packages",
   "private": false,
   "workspaces": [
