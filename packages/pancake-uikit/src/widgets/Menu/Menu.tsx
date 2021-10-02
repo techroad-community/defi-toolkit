@@ -33,7 +33,6 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   z-index: 20;
   transform: translate3d(0, 0, 0);
-
   padding-left: 16px;
   padding-right: 16px;
 `;
@@ -111,12 +110,12 @@ const Menu: React.FC<NavProps> = ({
           {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
         </Flex>
         <Flex alignItems="center">
-          {!isMobile && (
+          {/* {!isMobile && (
             <Box mr="12px">
               <CakePrice cakePriceUsd={cakePriceUsd} />
             </Box>
-          )}
-          <Box mt="4px">
+          )} */}
+          {/* <Box mt="4px">
             <LangSelector
               currentLang={currentLang}
               langs={langs}
@@ -125,8 +124,9 @@ const Menu: React.FC<NavProps> = ({
               color="textSubtle"
               hideLanguage
             />
-          </Box>
-          {globalMenu} {userMenu}
+          </Box> */}
+          {globalMenu}
+          {userMenu}
         </Flex>
       </StyledNav>
       {subLinks && <SubMenuItems items={subLinks} mt={`${MENU_HEIGHT + 1}px`} activeItem={activeSubItem} />}

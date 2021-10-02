@@ -1,5 +1,5 @@
 import React from "react";
-import { baseColors, darkColors, lightColors } from "../../theme/colors";
+import { baseColors, darkColors, doodaDarkColors, lightColors } from "../../theme/colors";
 import { Flex, Box } from "../Box";
 import { Link } from "../Link";
 import {
@@ -9,12 +9,13 @@ import {
   StyledListItem,
   StyledSocialLinks,
   StyledToolsContainer,
+  FooterSubMenu,
 } from "./styles";
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
 import CakePrice from "../CakePrice/CakePrice";
-import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
+import { LogoWithTextIcon, ArrowForwardIcon, GuardianHoldingLogo } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
 
@@ -42,30 +43,38 @@ const MenuItem: React.FC<FooterProps> = ({
           alignItems="flex-start"
           mb={["42px", null, "36px"]}
         >
-          {items?.map((item) => (
-            <StyledList key={item.label}>
-              <StyledListItem>{item.label}</StyledListItem>
-              {item.items?.map(({ label, href, isHighlighted = false }) => (
-                <StyledListItem key={label}>
-                  <Link
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    color={isHighlighted ? baseColors.warning : darkColors.text}
-                    bold={false}
-                  >
-                    {label}
-                  </Link>
-                </StyledListItem>
-              ))}
-            </StyledList>
-          ))}
-          <Box display={["none", null, "block"]}>
+          {/* <Box display={["none", null, "block"]}> */}
+
+          <div style={{ display: "flex", flexDirection: "row", paddingTop: "0px" }}>
+            <GuardianHoldingLogo style={{ marginTop: "-4rem" }} isDark width="220px" height="70px" />
+            {items?.map((item) => (
+              <StyledList key={item.label}>
+                <StyledListItem>{item.label}</StyledListItem>
+                {item.items?.map(({ label, href, isHighlighted = false }) => (
+                  <StyledListItem key={label}>
+                    <FooterSubMenu
+                    // href={href}
+                    // target="_blank"
+                    // rel="noreferrer noopener"
+                    // color='{isHighlighted ? baseColors.warning : darkColors.text}'
+                    // bold={false}
+                    >
+                      {label}
+                    </FooterSubMenu>
+                  </StyledListItem>
+                ))}
+              </StyledList>
+            ))}
+          </div>
+          {/* </Box> */}
+
+          {/* <Box display={["none", null, "block"]}>
             <LogoWithTextIcon isDark width="160px" />
-          </Box>
+          </Box> */}
+          <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
-        <StyledToolsContainer
+        {/* <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} /> */}
+        {/* <StyledToolsContainer
           order={[1, null, 3]}
           flexDirection={["column", null, "row"]}
           justifyContent="space-between"
@@ -76,7 +85,7 @@ const MenuItem: React.FC<FooterProps> = ({
               currentLang={currentLang}
               langs={langs}
               setLang={setLang}
-              color={darkColors.textSubtle as keyof Colors}
+              color={doodaDarkColors.textDeepDark as keyof Colors}
               dropdownPosition="top-right"
             />
           </Flex>
@@ -94,7 +103,7 @@ const MenuItem: React.FC<FooterProps> = ({
               {buyCakeLabel}
             </Button>
           </Flex>
-        </StyledToolsContainer>
+        </StyledToolsContainer> */}
       </Flex>
     </StyledFooter>
   );

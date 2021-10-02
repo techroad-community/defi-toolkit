@@ -14,7 +14,7 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
         bottom: 0;
         height: 4px;
         width: 100%;
-        background-color: ${theme.colors.primary};
+        background-color: ${theme.colors.doodaPrimary}; // shows the underline of menu items // previous = theme.colors.primary
         border-radius: 2px 2px 0 0;
       }
     `};
@@ -24,11 +24,13 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
-
-  color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
+  // color: ${({ theme, $isActive }) =>
+    $isActive ? theme.colors.secondary : theme.colors.textSubtle}; // text color old
+  color: ${({ theme, $isActive }) => ($isActive ? theme.colors.doodaPrimary : theme.colors.doodaPrimary)};
+  border-bottom: ${({ theme, $isActive }) => ($isActive ? `3px solid ${theme.colors.doodaPrimary}` : "0px")};
+  opacity: ${({ $isActive }) => ($isActive ? "1" : "0.6")};
   font-size: 16px;
   font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
-
   ${({ $statusColor, theme }) =>
     $statusColor &&
     `
@@ -54,8 +56,9 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   `}
 
   &:hover {
-    background: ${({ theme }) => theme.colors.tertiary};
-    ${({ $variant }) => $variant === "default" && "border-radius: 16px;"};
+    // background: ${({ theme }) => theme.colors.tertiary};
+    // ${({ $variant }) => $variant === "default" && "border-radius: 16px;"};
+    border-bottom: 3px solid ${({ theme }) => theme.colors.doodaPrimary};
   }
 `;
 

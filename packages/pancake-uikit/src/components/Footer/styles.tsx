@@ -1,10 +1,13 @@
 import styled from "styled-components";
-import { darkColors } from "../../theme/colors";
+// import { darkColors } from "../../theme/colors";
+import { darkColors, doodaDarkColors } from "../../theme/colors";
 import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
+  // background: ${darkColors.backgroundAlt};
+  background: ${doodaDarkColors.backgroundLightDark};
+  // background: red;
 `;
 
 export const StyledList = styled.ul`
@@ -17,14 +20,22 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledListItem = styled.li`
-  font-size: 16px;
   margin-bottom: 8px;
   text-transform: capitalize;
 
   &:first-child {
-    color: ${darkColors.secondary};
+    color: ${doodaDarkColors.footerTextColor};
+    font-size: 16px !important;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: Spoqa Han Sans Neo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    letter-spacing: -0.02em;
   }
 `;
 
@@ -49,5 +60,18 @@ export const StyledToolsContainer = styled(Flex)`
 `;
 
 export const StyledSocialLinks = styled(SocialLinks)`
-  border-bottom: 1px solid ${darkColors.cardBorder};
+  // border-bottom: 1px solid ${darkColors.cardBorder};
+  margin-top: 1.6rem;
+  padding-top: 1rem !important;
+  content-align: right;
+`;
+
+export const FooterSubMenu = styled.h3`
+  color: ${doodaDarkColors.footerTextColor};
+  font-family: Spoqa Han Sans Neo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
 `;
