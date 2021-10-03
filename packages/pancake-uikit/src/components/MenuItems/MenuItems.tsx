@@ -13,8 +13,15 @@ const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSub
         const isActive = activeItem === href;
         return (
           <DropdownMenu key={label} items={menuItems} py={1} activeItem={activeSubItem}>
-            <MenuItem href={href} isActive={isActive} statusColor={statusColor}>
-              {label || <IconComponent iconName={icon} color={isActive ? "secondary" : "textSubtle"} />}
+            <MenuItem
+              href={href}
+              isActive={isActive}
+              statusColor={statusColor} // this shows the status color at the side of each nav
+            >
+              {label || (
+                // uesd to display the icons on side of nav items
+                <IconComponent iconName={icon} color={isActive ? "doodaPrimary" : "doodaDark"} />
+              )}
             </MenuItem>
           </DropdownMenu>
         );

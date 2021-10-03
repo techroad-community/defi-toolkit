@@ -73,6 +73,10 @@ export type Colors = {
   gold: string;
   silver: string;
   bronze: string;
+  // doodaAdded Colors
+  doodaPrimary: string;
+  doodaSecondary: string;
+  doodaDark: string;
 };
 
 export type ZIndices = {

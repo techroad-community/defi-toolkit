@@ -10,6 +10,13 @@ export const baseColors = {
   warning: "#FFB237",
 };
 
+export const doodaDarkColors = {
+  backgroundLightDark: "#99A2AB",
+  textDeepDark: "#636C7D",
+  textDisabled: "#3763A4",
+  footerTextColor: "#E9ECEF",
+};
+
 export const additionalColors = {
   binance: "#F0B90B",
   overlay: "#452a7a",
@@ -37,6 +44,10 @@ export const lightColors: Colors = {
   textDisabled: "#BDC2C4",
   textSubtle: "#7A6EAA",
   disabled: "#E9EAEB",
+  // dooda Added Colors
+  doodaPrimary: "#3763A4",
+  doodaSecondary: "#3763A4",
+  doodaDark: "#4D5560",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
@@ -69,6 +80,9 @@ export const darkColors: Colors = {
   textDisabled: "#666171",
   textSubtle: "#B8ADD2",
   disabled: "#524B63",
+  doodaPrimary: "#3763A4",
+  doodaSecondary: "#3763A4",
+  doodaDark: "#4D5560",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",

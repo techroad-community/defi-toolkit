@@ -11,7 +11,7 @@ const ThemeSwitcher: React.FC<Props> = ({ isDark, toggleTheme }) => (
   <Toggle
     checked={isDark}
     defaultColor="textDisabled"
-    checkedColor="textDisabled"
+    checkedColor="backgroundAlt"
     onChange={() => toggleTheme(!isDark)}
     scale="md"
     startIcon={(isActive = false) => <IconComponent iconName="Sun" color={isActive ? "warning" : "backgroundAlt"} />}
