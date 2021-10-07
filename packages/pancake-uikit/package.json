@@ -1,6 +1,6 @@
 {
   "name": "@doodaswap/uikit",
-  "version": "0.54.20",
+  "version": "0.54.22",
   "description": "Set of UI components for dooda projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

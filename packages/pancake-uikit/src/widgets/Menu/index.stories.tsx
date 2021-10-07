@@ -45,9 +45,9 @@ const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: 
   return (
     <DropdownMenu items={userMenulinks} py="10px">
       <StyledUserMenu>
-        {/* <MenuIcon avatarSrc="" variant={variant} /> */}
+        <MenuIcon avatarSrc="" variant={variant} />
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        {/* <ChevronDownIcon color="text" width="24px" /> */}
+        <ChevronDownIcon color="text" width="24px" />
       </StyledUserMenu>
     </DropdownMenu>
   );

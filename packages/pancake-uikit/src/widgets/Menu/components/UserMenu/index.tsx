@@ -10,15 +10,15 @@ import { UserMenuItem } from "./styles";
 
 export const StyledUserMenu = styled(Flex)`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  border-radius: 16px;
+  // background-color: ${({ theme }) => theme.colors.tertiary};
+  // border-radius: 16px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: inline-flex;
   height: 36px;
   padding: 1rem 1.3rem;
   position: relative;
-  background: #3763a4;
+  background: ${({ theme }) => theme.colors.doodaPrimary};
   border-radius: 2px;
   &:hover {
     opacity: 0.65;
@@ -40,7 +40,7 @@ export const LabelText = styled.div`
 const Menu = styled.div<{ isOpen: boolean }>`
   background-color: ${({ theme }) => theme.card.background};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  border-radius: 16px;
+  // border-radius: 16px;
   padding-bottom: 4px;
   padding-top: 4px;
   pointer-events: auto;
@@ -67,8 +67,8 @@ const Menu = styled.div<{ isOpen: boolean }>`
 const UserMenu: React.FC<UserMenuProps> = ({
   account,
   text,
-  avatarSrc,
-  variant = variants.DEFAULT,
+  // avatarSrc,
+  // variant = variants.DEFAULT,
   children,
   ...props
 }) => {
@@ -158,9 +158,9 @@ const UserMenu: React.FC<UserMenuProps> = ({
   return (
     <>
       <StyledUserMenu ref={setTargetRef} {...props}>
-        <MenuIcon avatarSrc={avatarSrc} variant={variant} />
+        {/* <MenuIcon avatarSrc={avatarSrc} variant={variant} /> */}
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="text" width="24px" />
+        {/* <ChevronDownIcon color="text" width="24px" /> */}
       </StyledUserMenu>
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         {children}
