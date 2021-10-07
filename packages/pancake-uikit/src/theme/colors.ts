@@ -8,6 +8,7 @@ export const baseColors = {
   secondary: "#7645D9",
   success: "#31D0AA",
   warning: "#FFB237",
+  doodaPrimary: "#3763A4",
 };
 
 export const doodaDarkColors = {
@@ -41,6 +42,7 @@ export const lightColors: Colors = {
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
   text: "#280D5F",
+  textWhite: "#F1F3F5",
   textDisabled: "#BDC2C4",
   textSubtle: "#7A6EAA",
   disabled: "#E9EAEB",

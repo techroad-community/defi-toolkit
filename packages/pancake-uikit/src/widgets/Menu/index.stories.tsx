@@ -30,7 +30,7 @@ export default {
   },
 };
 
-const langs: Language[] = [...Array(20)].map((_, i) => ({
+const langs: Language[] = [...Array(4)].map((_, i) => ({
   code: `en${i}`,
   language: `English${i}`,
   locale: `Locale${i}`,
@@ -43,11 +43,11 @@ const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: 
 }) => {
   const accountEllipsis = account ? `${account.substring(0, 2)}...${account.substring(account.length - 4)}` : null;
   return (
-    <DropdownMenu items={userMenulinks} py="12px">
+    <DropdownMenu items={userMenulinks} py="10px">
       <StyledUserMenu>
-        <MenuIcon avatarSrc="" variant={variant} />
+        {/* <MenuIcon avatarSrc="" variant={variant} /> */}
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="text" width="24px" />
+        {/* <ChevronDownIcon color="text" width="24px" /> */}
       </StyledUserMenu>
     </DropdownMenu>
   );

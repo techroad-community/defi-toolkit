@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../Text/Text";
 import Dropdown from "../Dropdown/Dropdown";
 import Button from "../Button/Button";
-import LanguageIcon from "../Svg/Icons/Language";
+import DropdownIcon from "../Svg/Icons/DropdownIcon";
 import MenuButton from "./MenuButton";
 import { Colors } from "../../theme";
 import { Language } from "./types";
@@ -31,8 +31,8 @@ const LangSelector: React.FC<Props> = ({
   <Dropdown
     position={dropdownPosition}
     target={
-      <Button scale={buttonScale} variant="text" startIcon={<LanguageIcon color={color} width="24px" />}>
-        {!hideLanguage && <Text color={color}>{currentLang?.toUpperCase()}</Text>}
+      <Button scale={buttonScale} variant="text" endIcon={<DropdownIcon color={color} width="24px" />}>
+        {!hideLanguage && <Text color="doodaPrimary">{currentLang?.toUpperCase()}</Text>}
       </Button>
     }
   >

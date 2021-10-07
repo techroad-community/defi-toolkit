@@ -8,10 +8,12 @@ const getTextColor = ({
   disabled,
   theme,
 }: StyledDropdownMenuItemProps & { theme: DefaultTheme; $isActive: boolean }) => {
+  // if (disabled) return theme.colors.textDisabled;
+  // if ($isActive) return theme.colors.secondary;
   if (disabled) return theme.colors.textDisabled;
-  if ($isActive) return theme.colors.secondary;
+  if ($isActive) return theme.colors.doodaPrimary;
 
-  return theme.colors.textSubtle;
+  return theme.colors.doodaPrimary;
 };
 
 export const DropdownMenuItem = styled.button<StyledDropdownMenuItemProps & { $isActive: boolean }>`
@@ -73,7 +75,7 @@ export const StyledOverlay = styled.div`
 export const StyledDropdownMenu = styled.div<{ $isOpen: boolean; $isBottomNav: boolean }>`
   background-color: ${({ theme }) => theme.card.background};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  border-radius: 16px;
+  // border-radius: 16px;
   padding-bottom: 4px;
   padding-top: 4px;
   pointer-events: auto;

@@ -15,18 +15,18 @@ export const StyledUserMenu = styled(Flex)`
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: inline-flex;
-  height: 32px;
-  padding-left: 40px;
-  padding-right: 8px;
+  height: 36px;
+  padding: 1rem 1.3rem;
   position: relative;
-
+  background: #3763a4;
+  border-radius: 2px;
   &:hover {
     opacity: 0.65;
   }
 `;
 
 export const LabelText = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.textWhite};
   display: none;
   font-weight: 600;
 

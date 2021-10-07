@@ -19,6 +19,7 @@ const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
   position: absolute;
   top: -4px;
   width: 40px;
+  display: none;
   z-index: 102;
 `;
 
@@ -34,9 +35,7 @@ const ProfileIcon = styled(Image)`
 `;
 
 export const NoProfileMenuIcon: React.FC = () => (
-  <MenuIconWrapper borderColor="primary">
-    <WalletFilledIcon color="primary" width="24px" />
-  </MenuIconWrapper>
+  <MenuIconWrapper borderColor="primary">{/* <WalletFilledIcon color="primary" width="24px" /> */}</MenuIconWrapper>
 );
 
 export const PendingMenuIcon: React.FC = () => (
