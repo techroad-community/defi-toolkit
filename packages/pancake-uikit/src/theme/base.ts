@@ -37,6 +37,7 @@ const radii = {
   small: "4px",
   default: "16px",
   card: "24px",
+  doodaCard: "4px",
   circle: "50%",
 };
 

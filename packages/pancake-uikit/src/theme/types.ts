@@ -16,6 +16,7 @@ export type Radii = {
   small: string;
   default: string;
   card: string;
+  doodaCard: string;
   circle: string;
 };
 
