@@ -20,96 +20,46 @@ export const status = {
 
 export const links: MenuItemsType[] = [
   {
+    label: "Home",
+    href: "/",
+    icon: "Home",
+    items: [],
+  },
+  {
+    label: "Dashboard",
+    href: "/dashboard",
+    icon: "Dashboard",
+    items: [],
+  },
+  {
     label: "Trade",
     href: "/swap",
     icon: "Swap",
-    items: [
-      {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
-      },
-      {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
-      },
-    ],
+    items: [],
   },
   {
-    label: "Earn",
-    href: "/",
-    icon: "Earn",
-    items: [
-      {
-        label: "Earn",
-        href: "/",
-      },
-      {
-        label: "Yield Farms",
-        href: "/",
-      },
-      {
-        label: "Syrup pools",
-        href: "/",
-      },
-    ],
+    label: "Farms",
+    href: "/farms",
+    icon: "Farms",
+    items: [],
   },
   {
-    label: "Win",
-    href: "/",
-    icon: "Trophy",
-    items: [
-      {
-        label: "Win",
-        href: "/",
-      },
-      {
-        label: "Predictions",
-        href: "/",
-      },
-      {
-        label: "Lottery",
-        href: "/",
-      },
-    ],
+    label: "Pools",
+    href: "/pools",
+    icon: "Pools",
+    items: [],
   },
   {
-    label: "",
-    href: "/",
-    icon: "More",
-    items: [
-      {
-        label: "Info & Analytics",
-        href: "/",
-      },
-      {
-        label: "IFO Token Sales",
-        href: "/",
-        status: status.SOON,
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: "NFT Collectibles",
-        href: "/",
-      },
-      {
-        label: "Team Leaderboard",
-        href: "/",
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
-      {
-        label: "Blog",
-        href: "/",
-      },
-      {
-        label: "Docs & Guides",
-        href: "/",
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
+    label: "IDO",
+    href: "/ifo",
+    icon: "ifo",
+    items: [],
+  },
+  {
+    label: "NFA",
+    href: "/nfts",
+    icon: "Nfts",
+    items: [],
   },
 ];
 
