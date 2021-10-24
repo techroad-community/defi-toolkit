@@ -8,13 +8,36 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
     $isActive &&
     $variant === "subMenu" &&
     `
+      padding: 10px 5rem;
+      text-align:center;
+      background: #3763A4;
+      border-radius: 2px;
+      color:#fff;
       &:before{
         content: "";
         position: absolute;
         bottom: 0;
         height: 4px;
         width: 100%;
-        background-color: ${theme.colors.doodaPrimary}; // shows the underline of menu items // previous = theme.colors.primary
+        // background-color: ${theme.colors.doodaPrimary}; // shows the underline of menu items // previous = theme.colors.primary
+        border-radius: 2px 2px 0 0;
+      }
+    `};
+  ${({ $isActive, $variant, theme }) =>
+    !$isActive &&
+    $variant === "subMenu" &&
+    `
+      padding: 10px 5rem;
+      text-align:center;
+      background: #fff;
+      border-radius: 2px;
+      color:#fff;
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        width: 100%;
         border-radius: 2px 2px 0 0;
       }
     `};
@@ -24,13 +47,14 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
-  // color: ${({ theme, $isActive }) =>
-    $isActive ? theme.colors.secondary : theme.colors.textSubtle}; // text color old
-  color: ${({ theme, $isActive }) => ($isActive ? theme.colors.doodaPrimary : theme.colors.doodaPrimary)};
+  color: ${({ theme, $isActive, $variant }) => ($variant === "default" ? theme.colors.doodaPrimary : "#fff")};
+  color: ${({ theme, $isActive, $variant }) => ($isActive && $variant !== "default" ? "#fff" : "")};
+  color: ${({ theme, $isActive, $variant }) => (!$isActive && $variant !== "default" ? theme.colors.doodaDark : "")};
+
   border-bottom: ${({ theme, $isActive }) => ($isActive ? `3px solid ${theme.colors.doodaPrimary}` : "0px")};
-  opacity: ${({ $isActive }) => ($isActive ? "1" : "0.6")};
+  opacity: ${({ $isActive, $variant }) => ($isActive || $variant === "subMenu" ? "1" : "0.3")};
   font-size: 16px;
-  font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
+  font-weight: ${({ $isActive, $variant }) => ($isActive && $variant === "default" ? "600" : "400")};
   ${({ $statusColor, theme }) =>
     $statusColor &&
     `
@@ -55,10 +79,12 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
     height: 42px;
   `}
 
+  ${({ $variant }) => $variant === "subMenu" && "color:#fff"}
+
   &:hover {
     // background: ${({ theme }) => theme.colors.tertiary};
     // ${({ $variant }) => $variant === "default" && "border-radius: 16px;"};
-    border-bottom: 3px solid ${({ theme }) => theme.colors.doodaPrimary};
+    // border-bottom: 3px solid ${({ theme }) => theme.colors.doodaPrimary};
   }
 `;
 
