@@ -35,7 +35,16 @@ export const links: MenuItemsType[] = [
     label: "Trade",
     href: "/swap",
     icon: "Swap",
-    items: [],
+    items: [
+      {
+        label: "Exchange",
+        href: "/swap",
+      },
+      {
+        label: "Liquidity",
+        href: "/pool",
+      },
+    ],
   },
   {
     label: "Farms",
