@@ -24,6 +24,18 @@ export const StyledUserMenu = styled(Flex)`
     opacity: 0.65;
   }
 `;
+export const StyledUserMenuMobile = styled(Flex)`
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  height: 36px;
+  // padding: 1rem 1.3rem;
+  position: relative;
+  border-radius: 2px;
+  &:hover {
+    opacity: 0.65;
+  }
+`;
 
 export const LabelText = styled.div`
   color: ${({ theme }) => theme.colors.textWhite};

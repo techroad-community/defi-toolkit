@@ -8,16 +8,17 @@ import IconButton from "../../components/Button/IconButton";
 import DropdownMenu from "../../components/DropdownMenu/DropdownMenu";
 import Heading from "../../components/Heading/Heading";
 import Input from "../../components/Input/Input";
-import { ChevronDownIcon, CogIcon, LanguageCurrencyIcon } from "../../components/Svg";
+import { ChevronDownIcon, CogIcon, HamburgerIcon, LanguageCurrencyIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import { Modal, ModalProps, useModal } from "../Modal";
-import { LabelText, StyledUserMenu } from "./components/UserMenu";
+import { LabelText, StyledUserMenu, StyledUserMenuMobile } from "./components/UserMenu";
 import MenuIcon from "./components/UserMenu/MenuIcon";
 import { Variant, variants } from "./components/UserMenu/types";
 import { links, userMenulinks } from "./config";
 import { footerLinks } from "../../components/Footer/config";
 import Menu from "./Menu";
 import { Language, NavProps } from "./types";
+import { useMatchBreakpoints } from "../../hooks";
 
 export default {
   title: "Widgets/Menu",
@@ -41,14 +42,23 @@ const UserMenuComponent: React.FC<{ variant?: Variant; text?: string; account?: 
   text,
   account = "0x8b017905DC96B38f817473dc885F84D4C76bC113",
 }) => {
+  const { isMobile } = useMatchBreakpoints();
   const accountEllipsis = account ? `${account.substring(0, 2)}...${account.substring(account.length - 4)}` : null;
   return (
     <DropdownMenu items={userMenulinks} py="10px">
-      <StyledUserMenu>
-        <MenuIcon avatarSrc="" variant={variant} />
-        <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="text" width="24px" />
-      </StyledUserMenu>
+      {isMobile ? (
+        <StyledUserMenuMobile>
+          <MenuIcon avatarSrc="" variant={variant} />
+          <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
+          <HamburgerIcon color="text" width="24px" />
+        </StyledUserMenuMobile>
+      ) : (
+        <StyledUserMenu>
+          <MenuIcon avatarSrc="" variant={variant} />
+          <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
+          <ChevronDownIcon color="text" width="24px" />
+        </StyledUserMenu>
+      )}
     </DropdownMenu>
   );
 };
