@@ -770,9 +770,15 @@
   integrity sha512-X67Z5y+VBJuHB/RjwECp8kSl5uYi0BvRbNeWqkaJCVh+LiTPl19WBUfG627psSgp9rSf6ojuXghQM3ha6qHHdA==
 
 "@babel/parser@^7.16.0":
+<<<<<<< HEAD
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.16.0.tgz#cf147d7ada0a3655e79bf4b08ee846f00a00a295"
   integrity sha512-TEHWXf0xxpi9wKVyBCmRcSSDjbJ/cl6LUdlbYUHEaNQUJGhreJbZrXT6sR4+fZLxVUJqNRB4KyOvjuy/D9009A==
+=======
+  version "7.16.2"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.16.2.tgz#3723cd5c8d8773eef96ce57ea1d9b7faaccd12ac"
+  integrity sha512-RUVpT0G2h6rOZwqLDTrKk7ksNv7YpAilTnYe1/Q+eDjxEceRMKVWbCsX7t8h6C1qCFi/1Y8WZjcEPBAFG27GPw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@^7.13.12":
   version "7.13.12"
@@ -2342,7 +2348,11 @@
     buffer "^5.4.3"
     seedrandom "^3.0.5"
 
+<<<<<<< HEAD
 "@doodaswap-libs/dooda-swap-core@^0.1.2":
+=======
+"@doodaswap-libs/dooda-swap-core@^0.1.3":
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@doodaswap-libs/dooda-swap-core/-/dooda-swap-core-0.1.3.tgz#c35f331c7bf0834a11058ed1cf0393b78be70b42"
   integrity sha512-H3oswGz/7h56wv2mAN/uBkGsddg/onY2dzVr5XOSjs+e7WnDeB9s7ggYO+LW486jWKR2FBb2ZVKsebKUcOvEZg==
@@ -2352,11 +2362,19 @@
     truffle-hdwallet-provider "^1.0.17"
 
 "@doodaswap/sdk@^2.4.8":
+<<<<<<< HEAD
   version "2.4.8"
   resolved "https://registry.yarnpkg.com/@doodaswap/sdk/-/sdk-2.4.8.tgz#a9de06ba9e28852cf6123e53c4b075c5d437767d"
   integrity sha512-0nF72aFSfEoLH/zRJ7GFxDpmdXgU58bFZaj5bOPiG2COr8Ye/3BSP09/ojkM5wzqLo10MrhdlHhEXeeZ7DrcSA==
   dependencies:
     "@doodaswap-libs/dooda-swap-core" "^0.1.2"
+=======
+  version "2.4.10"
+  resolved "https://registry.yarnpkg.com/@doodaswap/sdk/-/sdk-2.4.10.tgz#8ab710b21dc190515b84b56871bdc65deb84b612"
+  integrity sha512-0filfR5UACw5zkUAwE67/XrS1Pr+qcTvLjzIzk2Um13QKjl4VwotRGDThJ0txflUpLbai7swus70PFnTIf8Paw==
+  dependencies:
+    "@doodaswap-libs/dooda-swap-core" "^0.1.3"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
@@ -2792,6 +2810,7 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/transactions" "^5.5.0"
 
+<<<<<<< HEAD
 "@ethersproject/experimental@^5.0.1":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@ethersproject/experimental/-/experimental-5.5.0.tgz#3fdf8d51112c1074f401ef3c6c9e57f8a3cf12e3"
@@ -2801,6 +2820,8 @@
     ethers "^5.5.0"
     scrypt-js "3.0.1"
 
+=======
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 "@ethersproject/hash@5.4.0", "@ethersproject/hash@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@ethersproject/hash/-/hash-5.4.0.tgz#d18a8e927e828e22860a011f39e429d388344ae0"
@@ -3386,11 +3407,19 @@
     tslib "~2.1.0"
 
 "@graphql-tools/import@^6.2.4", "@graphql-tools/import@^6.2.6":
+<<<<<<< HEAD
   version "6.5.7"
   resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.5.7.tgz#acd8cfca3bb162b405aa733b3c35e1d948357c67"
   integrity sha512-E892M7WF8a1vCcDENP/ODmwg5zwUCSZlGExsFpWhgemmbNN6HaXHiJglL2kfp3sWGD8/ayjMcj+f9fX7PLDytg==
   dependencies:
     "@graphql-tools/utils" "8.5.1"
+=======
+  version "6.5.8"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.5.8.tgz#f6fb890031f1f1e5fd59a5663bc256d1d6f22fd2"
+  integrity sha512-G0/PRf7tY3FZ8QzCeI+XH+CMye1Gd5JHw1G8RvhELxKG0l94xMAih/y7n8FgYp1Q2NgjsY2hFhUpdqgvF/WU3w==
+  dependencies:
+    "@graphql-tools/utils" "8.5.2"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     resolve-from "5.0.0"
     tslib "~2.3.0"
 
@@ -3565,10 +3594,17 @@
   dependencies:
     tslib "~2.3.0"
 
+<<<<<<< HEAD
 "@graphql-tools/utils@8.5.1", "@graphql-tools/utils@^8.5.1":
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.1.tgz#95f3a9bdcaa8de312130c46b6da829a3fcbac3f6"
   integrity sha512-V/OQVpj+Z05qW9ZdlJWSKzREYlgGEq+juV+pUy3JO9jI+sZo/W3oncuW9+1awwp/RkL0aZ9RgjL+XYOgCsmOLw==
+=======
+"@graphql-tools/utils@8.5.2", "@graphql-tools/utils@^8.5.1":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.2.tgz#fa775d92c19237f648105f7d4aeeeb63ba3d257f"
+  integrity sha512-wxA51td/759nQziPYh+HxE0WbURRufrp1lwfOYMgfK4e8Aa6gCa1P1p6ERogUIm423NrIfOVau19Q/BBpHdolw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     tslib "~2.3.0"
 
@@ -6129,27 +6165,46 @@
     "@types/google-protobuf" "^3.7.4"
     google-protobuf "^3.13.0"
 
+<<<<<<< HEAD
 "@textile/buckets@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@textile/buckets/-/buckets-6.2.0.tgz#0c67d8cd221da3a44f7e4aa55cf60b6b09a57dfa"
   integrity sha512-83yqKiz1sAvu93l+5klGdjYzsoXYdRbncXzZ7QPWReS8UEV6/VhrvmkIz0K5EYSVWXuLeh0HjVB53Kq3VLMmiw==
+=======
+"@textile/buckets@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@textile/buckets/-/buckets-6.2.1.tgz#ca9920711a64e6f79e0af4f202bf6c2afd62acce"
+  integrity sha512-oX/kigti01gQtz226Q7BI2GVdLBNlKvmY9E0RBkDEUGK7w57EXAvhUkHrVqdBTufeShTMWybx+GrWq/sU3gyqw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     "@repeaterjs/repeater" "^3.0.4"
     "@textile/buckets-grpc" "2.6.6"
     "@textile/context" "^0.12.1"
     "@textile/crypto" "^4.2.1"
+<<<<<<< HEAD
     "@textile/grpc-authentication" "^3.4.1"
     "@textile/grpc-connection" "^2.5.1"
     "@textile/grpc-transport" "^0.5.1"
     "@textile/hub-grpc" "2.6.6"
     "@textile/hub-threads-client" "^5.5.0"
+=======
+    "@textile/grpc-authentication" "^3.4.2"
+    "@textile/grpc-connection" "^2.5.2"
+    "@textile/grpc-transport" "^0.5.2"
+    "@textile/hub-grpc" "2.6.6"
+    "@textile/hub-threads-client" "^5.5.1"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     "@textile/security" "^0.9.1"
     "@textile/threads-id" "^0.6.1"
     abort-controller "^3.0.0"
     cids "^1.1.4"
     it-drain "^1.0.3"
     loglevel "^1.6.8"
+<<<<<<< HEAD
+=======
+    native-abort-controller "^1.0.3"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     paramap-it "^0.1.1"
 
 "@textile/context@^0.12.1":
@@ -6171,6 +6226,7 @@
     multibase "^3.1.0"
     tweetnacl "^1.0.3"
 
+<<<<<<< HEAD
 "@textile/grpc-authentication@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@textile/grpc-authentication/-/grpc-authentication-3.4.1.tgz#e2c3cc90f4b4c42e9abdd9d9eed1199de96f898a"
@@ -6190,6 +6246,27 @@
     "@improbable-eng/grpc-web" "^0.12.0"
     "@textile/context" "^0.12.1"
     "@textile/grpc-transport" "^0.5.1"
+=======
+"@textile/grpc-authentication@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@textile/grpc-authentication/-/grpc-authentication-3.4.2.tgz#eae26a48321a2bb06cad75296700a2c93338f149"
+  integrity sha512-La5Xg5ZDYLIy8ftQdj4VKdSS9l7O18OAgAzyOo2lWOtokKVIcx08Tih72s1OUiy52w5bqwtH1SxMkEXAJf2cjA==
+  dependencies:
+    "@textile/context" "^0.12.1"
+    "@textile/crypto" "^4.2.1"
+    "@textile/grpc-connection" "^2.5.2"
+    "@textile/hub-threads-client" "^5.5.1"
+    "@textile/security" "^0.9.1"
+
+"@textile/grpc-connection@^2.5.2":
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@textile/grpc-connection/-/grpc-connection-2.5.2.tgz#666b2d083322660539571bc95bbbb048f0c8c922"
+  integrity sha512-icvBwzT6+hhCjMTv0CEMpssGBIZpHQ5e4PKNqeeTYm68VivP3eCYUGqflzMJud6a2SwXMs7naThBYWI23vaOfQ==
+  dependencies:
+    "@improbable-eng/grpc-web" "^0.12.0"
+    "@textile/context" "^0.12.1"
+    "@textile/grpc-transport" "^0.5.2"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 "@textile/grpc-powergate-client@^2.6.2":
   version "2.6.2"
@@ -6200,10 +6277,17 @@
     "@types/google-protobuf" "^3.15.2"
     google-protobuf "^3.17.3"
 
+<<<<<<< HEAD
 "@textile/grpc-transport@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@textile/grpc-transport/-/grpc-transport-0.5.1.tgz#bb12cce341ab7daad7fd0a6199d2c122a52c0bdf"
   integrity sha512-TXd51uWUYhcGPeESbzgSgCy3OYAXJemUUk0lqAklAKvRiXG33SYx8K9CFDxBJdnzT5FOMck7eSliKCROaRuabw==
+=======
+"@textile/grpc-transport@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@textile/grpc-transport/-/grpc-transport-0.5.2.tgz#79b63e0618d25479fb06f6b9be256d6a80e9fac4"
+  integrity sha512-XEC+Ubs7/pibZU2AHDJLeCEAVNtgEWmEXBXYJubpp4SVviuGUyd4h+zvqLw4FiIBGtlxx1u//cmzANhL0Ew7Rw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     "@types/ws" "^7.2.6"
@@ -6211,16 +6295,28 @@
     loglevel "^1.6.6"
     ws "^7.2.1"
 
+<<<<<<< HEAD
 "@textile/hub-filecoin@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@textile/hub-filecoin/-/hub-filecoin-2.2.0.tgz#c659508490bf0a777bc4b95bf97c0de025957934"
   integrity sha512-1niQti/TSqsY8KKF3/QRxGWI4j2L0b6GfJDSh0t2hvWS4Sz6miTEtuLccL1ccQB/lj8Nko3MUok3v04WhhmoBA==
+=======
+"@textile/hub-filecoin@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@textile/hub-filecoin/-/hub-filecoin-2.2.1.tgz#4962d812c3e03d957c95f15c85773e95f825bd72"
+  integrity sha512-kY4uYmdbh67vUJExt4/I/BeBb0UjZ0fIYlxC9dpucFsy4UM79Cfr1r39JftmFni25DmNH3YSm3CtodGOYE8FMg==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.12.0"
     "@textile/context" "^0.12.1"
     "@textile/crypto" "^4.2.1"
+<<<<<<< HEAD
     "@textile/grpc-authentication" "^3.4.1"
     "@textile/grpc-connection" "^2.5.1"
+=======
+    "@textile/grpc-authentication" "^3.4.2"
+    "@textile/grpc-connection" "^2.5.2"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     "@textile/grpc-powergate-client" "^2.6.2"
     "@textile/hub-grpc" "2.6.6"
     "@textile/security" "^0.9.1"
@@ -6236,21 +6332,33 @@
     "@types/google-protobuf" "^3.7.4"
     google-protobuf "^3.13.0"
 
+<<<<<<< HEAD
 "@textile/hub-threads-client@^5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@textile/hub-threads-client/-/hub-threads-client-5.5.0.tgz#83d09cbc794b9796891f4d1b9b590eaf00a5b576"
   integrity sha512-W8j5W5ZO2i9nnRbBQLkt3DXbk2NEdz8jZ+YBavgJniWg8OdvnobSznvTv6ZNlJs7WWJPQF8Z3TA0aXKZi1ik6A==
+=======
+"@textile/hub-threads-client@^5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@textile/hub-threads-client/-/hub-threads-client-5.5.1.tgz#9c3b7e4e9c9a7064d77ac768778afd804f199ea7"
+  integrity sha512-wn1ST0gmjBdVQw5ujjJ6PYCi9OsKPuGUmYbvZovjH2vbdnzoc9ji9i20JSMsQDERf+dD8vjf8szFC8DM/9ONYg==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     "@textile/context" "^0.12.1"
     "@textile/hub-grpc" "2.6.6"
     "@textile/security" "^0.9.1"
+<<<<<<< HEAD
     "@textile/threads-client" "^2.3.0"
+=======
+    "@textile/threads-client" "^2.3.1"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     "@textile/threads-id" "^0.6.1"
     "@textile/users-grpc" "2.6.6"
     loglevel "^1.7.0"
 
 "@textile/hub@^6.0.2":
+<<<<<<< HEAD
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/@textile/hub/-/hub-6.3.0.tgz#a88b916d7b2cf1ffb9d699909be1f525052ed569"
   integrity sha512-LJe/KgFK6xMDlycl+txus70DV/zwbwlbcaM2xlnE6mK+fr+ZA0s8+7CX4UnvjT2xjgrw4/TPiQ8hoTArxmZ2xg==
@@ -6264,6 +6372,21 @@
     "@textile/security" "^0.9.1"
     "@textile/threads-id" "^0.6.1"
     "@textile/users" "^6.2.0"
+=======
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@textile/hub/-/hub-6.3.1.tgz#ea62fddcdf62d39e84ca3f92b99b53402793a3f8"
+  integrity sha512-N6sdZLOAVimVJL/Jn8EDwvqujxzosJWP03lo34GtGU+FTO03Xga0C7yVnEiSEx4IvrrELcfM/90nDAukXIfUGQ==
+  dependencies:
+    "@textile/buckets" "^6.2.1"
+    "@textile/crypto" "^4.2.1"
+    "@textile/grpc-authentication" "^3.4.2"
+    "@textile/hub-filecoin" "^2.2.1"
+    "@textile/hub-grpc" "2.6.6"
+    "@textile/hub-threads-client" "^5.5.1"
+    "@textile/security" "^0.9.1"
+    "@textile/threads-id" "^0.6.1"
+    "@textile/users" "^6.2.1"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     loglevel "^1.6.8"
     multihashes "3.1.2"
 
@@ -6295,15 +6418,26 @@
     "@types/google-protobuf" "^3.15.5"
     google-protobuf "^3.17.3"
 
+<<<<<<< HEAD
 "@textile/threads-client@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@textile/threads-client/-/threads-client-2.3.0.tgz#d911e80191eed7de9e75f20b760a2d2273f369ca"
   integrity sha512-4pbAuv8ke6Pyd7cuM/sWbrG5tZ3ODUeVLhq0HwIGXWFvT1odMfMS3E2gss6oEA5P4LxAHm7ITzt/0UwXDtEp0g==
+=======
+"@textile/threads-client@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@textile/threads-client/-/threads-client-2.3.1.tgz#2a5a96a243b596abee65956ce1c384ba254bccb2"
+  integrity sha512-Rf9prm7zbfbtiy/7I1l3IzWrVg6m4OqnPCv7IivhA7BgunuQqloa9HGd1vM0cSW6h/eh8/9B0wtIfs05SGrIWw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     "@textile/context" "^0.12.1"
     "@textile/crypto" "^4.2.1"
+<<<<<<< HEAD
     "@textile/grpc-transport" "^0.5.1"
+=======
+    "@textile/grpc-transport" "^0.5.2"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     "@textile/multiaddr" "^0.6.1"
     "@textile/security" "^0.9.1"
     "@textile/threads-client-grpc" "^1.1.1"
@@ -6330,20 +6464,35 @@
     "@types/google-protobuf" "^3.7.4"
     google-protobuf "^3.13.0"
 
+<<<<<<< HEAD
 "@textile/users@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@textile/users/-/users-6.2.0.tgz#5f92bccbecc23b38c95b3ef4fbe85cbff2cff9af"
   integrity sha512-uUQfKgsdBGKxSffnwwm1G8Je4sQ/Qvn2fTCMe83o3NFYhB3tOhv/gQSlsxd0TCyJnEyq7pH9EanuoCRNWe5Hcg==
+=======
+"@textile/users@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@textile/users/-/users-6.2.1.tgz#f716d630a1480cb81b1ac84001213b29663f7b88"
+  integrity sha512-vKS+myw//9ePxZg3i6uY+3HpghgInPluxSX+RFaDSS1K7v3xgr2XdSGiVD+A/uY6rjjQ8asKwnDCuY1ByiuM3g==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     "@improbable-eng/grpc-web" "^0.13.0"
     "@textile/buckets-grpc" "2.6.6"
     "@textile/context" "^0.12.1"
     "@textile/crypto" "^4.2.1"
+<<<<<<< HEAD
     "@textile/grpc-authentication" "^3.4.1"
     "@textile/grpc-connection" "^2.5.1"
     "@textile/grpc-transport" "^0.5.1"
     "@textile/hub-grpc" "2.6.6"
     "@textile/hub-threads-client" "^5.5.0"
+=======
+    "@textile/grpc-authentication" "^3.4.2"
+    "@textile/grpc-connection" "^2.5.2"
+    "@textile/grpc-transport" "^0.5.2"
+    "@textile/hub-grpc" "2.6.6"
+    "@textile/hub-threads-client" "^5.5.1"
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
     "@textile/security" "^0.9.1"
     "@textile/threads-id" "^0.6.1"
     "@textile/users-grpc" "2.6.6"
@@ -8107,9 +8256,15 @@ apollo-datasource@^0.9.0:
     apollo-server-env "^3.1.0"
 
 apollo-graphql@^0.9.0:
+<<<<<<< HEAD
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/apollo-graphql/-/apollo-graphql-0.9.4.tgz#f5c8d9be11b16289a71cdb1356e2fd5aedb9ec0c"
   integrity sha512-0X2sZxfmn7lJrRknUPBG+L0LP1B0SKX1qtULIWrDbIpyl9LuSyjnDaGtmvc4IQtyKvmQXtAhEHBnprRokkjkyw==
+=======
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/apollo-graphql/-/apollo-graphql-0.9.5.tgz#9113483ca7f7fa49ee9e9a299c45d30b1cf3bf61"
+  integrity sha512-RGt5k2JeBqrmnwRM0VOgWFiGKlGJMfmiif/4JvdaEqhMJ+xqe/9cfDYzXfn33ke2eWixsAbjEbRfy8XbaN9nTw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     core-js-pure "^3.10.2"
     lodash.sortby "^4.7.0"
@@ -9055,6 +9210,7 @@ bip32@^2.0.5:
     tiny-secp256k1 "^1.1.3"
     typeforce "^1.11.5"
     wif "^2.0.6"
+<<<<<<< HEAD
 
 bip39@^3.0.2:
   version "3.0.4"
@@ -9079,10 +9235,101 @@ bitcore-lib@^8.22.2, bitcore-lib@^8.25.10:
     inherits "=2.0.1"
     lodash "^4.17.20"
 
+=======
+
+bip39@^3.0.2:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/bip39/-/bip39-3.0.4.tgz#5b11fed966840b5e1b8539f0f54ab6392969b2a0"
+  integrity sha512-YZKQlb752TrUWqHWj7XAwCSjYEgGAk+/Aas3V7NyjQeZYsztO8JnQUaCWhcnL4T+jL8nvB8typ2jRPzTlgugNw==
+  dependencies:
+    "@types/node" "11.11.6"
+    create-hash "^1.1.0"
+    pbkdf2 "^3.0.9"
+    randombytes "^2.0.1"
+
+bitcore-lib@^8.22.2, bitcore-lib@^8.25.10:
+  version "8.25.10"
+  resolved "https://registry.yarnpkg.com/bitcore-lib/-/bitcore-lib-8.25.10.tgz#4bbb30932dec65cb76e4d1d793f55d7e4a75f071"
+  integrity sha512-MyHpSg7aFRHe359RA/gdkaQAal3NswYZTLEuu0tGX1RGWXAYN9i/24fsjPqVKj+z0ua+gzAT7aQs0KiKXWCgKA==
+  dependencies:
+    bech32 "=1.1.3"
+    bn.js "=4.11.8"
+    bs58 "^4.0.1"
+    buffer-compare "=1.1.1"
+    elliptic "^6.5.3"
+    inherits "=2.0.1"
+    lodash "^4.17.20"
+
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 bitcore-mnemonic@^8.22.2:
   version "8.25.10"
   resolved "https://registry.yarnpkg.com/bitcore-mnemonic/-/bitcore-mnemonic-8.25.10.tgz#43d7b73d9705a11fceef62e37089ad487e917c26"
   integrity sha512-FeXxO37BLV5JRvxPmVFB91zRHalavV8H4TdQGt1/hz0AkoPymIV68OkuB+TptpjeYgatcgKPoPvPhglJkTzFQQ==
+<<<<<<< HEAD
+=======
+  dependencies:
+    bitcore-lib "^8.25.10"
+    unorm "^1.4.1"
+
+bl@^1.0.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/bl/-/bl-1.2.3.tgz#1e8dd80142eac80d7158c9dccc047fb620e035e7"
+  integrity sha512-pvcNpa0UU69UT341rO6AYy4FVAIkUHuZXRIWbq+zHnsVcRzDDjIAhGuuYoi0d//cwIwtt4pkpKycWEfjdV+vww==
+  dependencies:
+    readable-stream "^2.3.5"
+    safe-buffer "^5.1.1"
+
+bl@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/bl/-/bl-4.1.0.tgz#451535264182bec2fbbc83a62ab98cf11d9f7b3a"
+  integrity sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==
+  dependencies:
+    buffer "^5.5.0"
+    inherits "^2.0.4"
+    readable-stream "^3.4.0"
+
+blakejs@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/blakejs/-/blakejs-1.1.1.tgz#bf313053978b2cd4c444a48795710be05c785702"
+  integrity sha512-bLG6PHOCZJKNshTjGRBvET0vTciwQE6zFKOKKXPDJfwFBd4Ac0yBfPZqcGvGJap50l7ktvlpFqc2jGVaUgbJgg==
+
+blob-to-it@^1.0.1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/blob-to-it/-/blob-to-it-1.0.4.tgz#f6caf7a4e90b7bb9215fa6a318ed6bd8ad9898cb"
+  integrity sha512-iCmk0W4NdbrWgRRuxOriU8aM5ijeVLI61Zulsmg/lUHNr7pYjoj+U77opLefNagevtrrbMt3JQ5Qip7ar178kA==
+  dependencies:
+    browser-readablestream-to-it "^1.0.3"
+
+bluebird@^3.3.5, bluebird@^3.5.0, bluebird@^3.5.2, bluebird@^3.5.5:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+
+bn.js@4.11.6:
+  version "4.11.6"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.6.tgz#53344adb14617a13f6e8dd2ce28905d1c0ba3215"
+  integrity sha1-UzRK2xRhehP26N0s4okF0cC6MhU=
+
+bn.js@4.11.8, bn.js@=4.11.8:
+  version "4.11.8"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
+  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.0, bn.js@^4.11.6, bn.js@^4.11.8, bn.js@^4.11.9, bn.js@^4.4.0:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
+
+bn.js@^5.0.0, bn.js@^5.1.1, bn.js@^5.1.2, bn.js@^5.1.3, bn.js@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.0.tgz#358860674396c6997771a9d051fcc1b57d4ae002"
+  integrity sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw==
+
+body-parser@1.19.0, body-parser@^1.16.0, body-parser@^1.18.3:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
+  integrity sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     bitcore-lib "^8.25.10"
     unorm "^1.4.1"
@@ -10598,9 +10845,15 @@ core-js-pure@^3.0.0, core-js-pure@^3.8.2:
   integrity sha512-1cch+qads4JnDSWsvc7d6nzlKAippwjUlf6vykkTLW53VSV+NkE6muGBToAjEA8pG90cSfcud3JgVmW2ds5TaQ==
 
 core-js-pure@^3.10.2:
+<<<<<<< HEAD
   version "3.19.0"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.19.0.tgz#db6fdadfdd4dc280ec93b64c3c2e8460e6f10094"
   integrity sha512-UEQk8AxyCYvNAs6baNoPqDADv7BX0AmBLGxVsrAifPPx/C8EAzV4Q+2ZUJqVzfI2TQQEZITnwUkWcHpgc/IubQ==
+=======
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.19.1.tgz#edffc1fc7634000a55ba05e95b3f0fe9587a5aa4"
+  integrity sha512-Q0Knr8Es84vtv62ei6/6jXH/7izKmOrtrxH9WJTHLCMAVeU+8TF8z8Nr08CsH4Ot0oJKzBzJJL9SJBYIv7WlfQ==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 core-js@^2.4.0:
   version "2.6.12"
@@ -10613,9 +10866,15 @@ core-js@^3.0.4, core-js@^3.6.5, core-js@^3.8.2:
   integrity sha512-Ne9DKPHTObRuB09Dru5AjwKjY4cJHVGu+y5f7coGn1E9Grkc3p2iBwE9AI/nJzsE29mQF7oq+mhYYRqOMFN1Bw==
 
 core-js@^3.2.1:
+<<<<<<< HEAD
   version "3.19.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.0.tgz#9e40098a9bc326c7e81b486abbd5e12b9d275176"
   integrity sha512-L1TpFRWXZ76vH1yLM+z6KssLZrP8Z6GxxW4auoCj+XiViOzNPJCAuTIkn03BGdFe6Z5clX5t64wRIRypsZQrUg==
+=======
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.1.tgz#f6f173cae23e73a7d88fa23b6e9da329276c6641"
+  integrity sha512-Tnc7E9iKd/b/ff7GFbhwPVzJzPztGrChB8X8GLqoYGdEOG8IpLnK1xPyo3ZoO3HsK6TodJS58VGPOxA+hLHQMg==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -11160,6 +11419,21 @@ dedent@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
+<<<<<<< HEAD
+
+deep-eql@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/deep-eql/-/deep-eql-0.1.3.tgz#ef558acab8de25206cd713906d74e56930eb69f2"
+  integrity sha1-71WKyrjeJSBs1xOQbXTlaTDrafI=
+  dependencies:
+    type-detect "0.1.1"
+
+deep-extend@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
+  integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
+=======
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 deep-eql@^0.1.3:
   version "0.1.3"
@@ -12488,7 +12762,11 @@ ethers@^4.0.32:
     uuid "2.0.1"
     xmlhttprequest "1.8.0"
 
+<<<<<<< HEAD
 ethers@^5.0.13, ethers@^5.5.0:
+=======
+ethers@^5.0.13:
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-5.5.1.tgz#d3259a95a42557844aa543906c537106c0406fbf"
   integrity sha512-RodEvUFZI+EmFcE6bwkuJqpCYHazdzeR1nMzg+YWQSmQEsNtfl1KHGfp/FWZYl48bI/g7cgBeP2IlPthjiVngw==
@@ -13234,9 +13512,15 @@ flux@^4.0.1:
     fbjs "^3.0.0"
 
 follow-redirects@^1.10.0:
+<<<<<<< HEAD
   version "1.14.4"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
   integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+=======
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -16995,6 +17279,54 @@ lodash.omit@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
   integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
+<<<<<<< HEAD
+
+lodash.partition@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.partition/-/lodash.partition-4.6.0.tgz#a38e46b73469e0420b0da1212e66d414be364ba4"
+  integrity sha1-o45GtzRp4EILDaEhLmbUFL42S6Q=
+
+lodash.pick@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
+  integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
+
+lodash.rest@^4.0.0:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/lodash.rest/-/lodash.rest-4.0.5.tgz#954ef75049262038c96d1fc98b28fdaf9f0772aa"
+  integrity sha1-lU73UEkmIDjJbR/Jiyj9r58Hcqo=
+
+lodash.sortby@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
+  integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+
+lodash.sum@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/lodash.sum/-/lodash.sum-4.0.2.tgz#ad90e397965d803d4f1ff7aa5b2d0197f3b4637b"
+  integrity sha1-rZDjl5ZdgD1PH/eqWy0Bl/O0Y3s=
+
+lodash.template@4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.2.4.tgz#d053c19e8e74e38d965bf4fb495d80f109e7f7a4"
+  integrity sha1-0FPBno50442WW/T7SV2A8Qnn96Q=
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
+    lodash.assigninwith "^4.0.0"
+    lodash.keys "^4.0.0"
+    lodash.rest "^4.0.0"
+    lodash.templatesettings "^4.0.0"
+    lodash.tostring "^4.0.0"
+
+lodash.template@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+    lodash.templatesettings "^4.0.0"
+=======
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
 
 lodash.partition@^4.6.0:
   version "4.6.0"
@@ -18267,9 +18599,15 @@ node-fetch@2.6.1, node-fetch@^2.6.1:
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-fetch@^2.6.0:
+<<<<<<< HEAD
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.5.tgz#42735537d7f080a7e5f78b6c549b7146be1742fd"
   integrity sha512-mmlIVHJEu5rnIxgEgez6b9GgWXbkZj5YZ7fx+2r94a2E+Uirsp6HsPTPlomfdHtpt/B0cdKviwkoaM6pyvUOpQ==
+=======
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.6.tgz#1751a7c01834e8e1697758732e9efb6eeadfaf89"
+  integrity sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -23214,7 +23552,11 @@ tiny-invariant@^1.0.2, tiny-invariant@^1.1.0:
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
   integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
 
+<<<<<<< HEAD
 tiny-invariant@^1.0.6:
+=======
+tiny-invariant@^1.0.6, tiny-invariant@^1.1.0:
+>>>>>>> 4f8c6a5a31a80a71c3d1d3a4f1792afa8fe56b97
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.2.0.tgz#a1141f86b672a9148c72e978a19a73b9b94a15a9"
   integrity sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==
