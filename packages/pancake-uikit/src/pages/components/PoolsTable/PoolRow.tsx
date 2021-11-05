@@ -4,7 +4,7 @@ import useMatchBreakpoints from "../../../hooks/useMatchBreakpoints";
 import { DeserializedPool } from "../../state/types";
 // import useDelayedUnmount from "hooks/useDelayedUnmount";
 import NameCell from "./Cells/NameCell";
-import EarningsCell from "./Cells/EarningsCell";
+// import EarningsCell from "./Cells/EarningsCell";
 import AprCell from "./Cells/AprCell";
 import TotalStakedCell from "./Cells/TotalStakedCell";
 import EndsInCell from "./Cells/EndsInCell";

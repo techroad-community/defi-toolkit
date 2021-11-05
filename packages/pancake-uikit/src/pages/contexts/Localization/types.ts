@@ -1,5 +1,5 @@
 import { ReactText } from "react";
-import { Language } from "@doodaswap/uikit";
+import { Language } from "../../../widgets/Menu/types";
 
 export type ContextData = {
   [key: string]: ReactText;

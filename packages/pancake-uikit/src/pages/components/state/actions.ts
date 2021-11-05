@@ -1,5 +1,5 @@
 import { createAction } from "@reduxjs/toolkit";
-import { SerializedToken } from "config/constants/types";
+import { SerializedToken } from "../../state/types";
 
 export interface SerializedPair {
   token0: SerializedToken;

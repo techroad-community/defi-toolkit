@@ -13,15 +13,8 @@ const StyledLogo = styled(Logo)<{ size: string }>`
   height: ${({ size }) => size};
 `;
 
-export default function CurrencyLogo({
-  currency,
-  size = "24px",
-  style,
-}: {
-  currency?: Currency;
-  size?: string;
-  style?: React.CSSProperties;
-}) {
+// eslint-disable-next-line react/require-default-props
+export default function CurrencyLogo({ size = "24px", style }: { size?: string; style?: React.CSSProperties }) {
   //   const uriLocations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined);
   //   const srcs: string[] = useMemo(() => {
   // if (currency === ETHER) return [];

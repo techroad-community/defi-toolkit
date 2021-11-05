@@ -38,12 +38,12 @@ const PoolTabButtons: React.FC<FarmTabButtonsProps> = ({ hasStakeInFinishedFarms
     <Wrapper>
       <StyledButtonMenu scale="sm" variant="subtle">
         {/* <StyledButtonMenuItem as={Link} to={`${url}`}> */}
-        <StyledButtonMenuItem as={Link} to={`#`}>
+        <StyledButtonMenuItem as={Link} to="#">
           Active
         </StyledButtonMenuItem>
         <NotificationDot show={hasStakeInFinishedFarms}>
           {/* <StyledButtonMenuItemInactive id="finished-farms-button" as={Link} to={`${url}/history`}> */}
-          <StyledButtonMenuItemInactive id="finished-farms-button" as={Link} to={`#`}>
+          <StyledButtonMenuItemInactive id="finished-farms-button" as={Link} to="#">
             Inactive
           </StyledButtonMenuItemInactive>
         </NotificationDot>

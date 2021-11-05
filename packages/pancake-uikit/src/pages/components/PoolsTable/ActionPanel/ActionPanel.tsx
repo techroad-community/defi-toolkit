@@ -84,6 +84,7 @@ const StyledActionPanel = styled.div<{ expanded: boolean }>`
     padding: 16px 32px;
   }
 `;
+const StyledLeftDiv = styled.div``;
 
 const ActionContainer = styled.div`
   display: flex;
@@ -296,7 +297,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
 
   return (
     <StyledActionPanel expanded={expanded}>
-      <div style={{ width: "19vw" }}></div>
+      <StyledLeftDiv style={{ width: "19vw" }} />
       <InfoSection>
         {maxStakeRow}
         {(isXs || isSm) && aprRow}

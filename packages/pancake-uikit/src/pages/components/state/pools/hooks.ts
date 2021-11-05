@@ -5,14 +5,14 @@ import { useSelector } from "react-redux";
 // import { useAppDispatch } from "state";
 // import { simpleRpcProvider } from "utils/providers";
 // import useRefresh from "hooks/useRefresh";
-import {
-  fetchPoolsPublicDataAsync,
-  fetchPoolsUserDataAsync,
-  fetchCakeVaultPublicData,
-  fetchCakeVaultUserData,
-  fetchCakeVaultFees,
-  fetchPoolsStakingLimitsAsync,
-} from ".";
+// import {
+//   fetchPoolsPublicDataAsync,
+//   fetchPoolsUserDataAsync,
+//   fetchCakeVaultPublicData,
+//   fetchCakeVaultUserData,
+//   fetchCakeVaultFees,
+//   fetchPoolsStakingLimitsAsync,
+// } from ".";
 import { State, DeserializedPool } from "../../../state/types";
 // import { transformPool } from "./helpers";
 

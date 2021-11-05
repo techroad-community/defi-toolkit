@@ -1,6 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { BlockState } from "../types";
 
+/* eslint no-param-reassign: "error" */
+
 const initialState: BlockState = { currentBlock: 0, initialBlock: 0 };
 
 export const blockSlice = createSlice({

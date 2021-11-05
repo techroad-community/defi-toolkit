@@ -97,7 +97,7 @@ const defaultProps = {
   activeSubItem: "https://exchange.pancakeswap.finance",
   buyCakeLabel: "Buy CAKE",
 };
-const subLinks = defaultProps.subLinks;
+const {subLinks} = defaultProps;
 
 const ConnectedTemplate: React.FC<NavProps> = (args) => {
   return (

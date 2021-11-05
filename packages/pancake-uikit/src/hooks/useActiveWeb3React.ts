@@ -1,9 +1,30 @@
 import { useEffect, useState, useRef } from "react";
+import { ethers } from "ethers";
 import { useWeb3React } from "@web3-react/core";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Web3Provider } from "@ethersproject/providers";
-import { simpleRpcProvider } from "utils/providers";
+import sample from "lodash/sample";
+// import { simpleRpcProvider } from "utils/providers";
 // eslint-disable-next-line import/no-unresolved
 import { Web3ReactContextInterface } from "@web3-react/core/dist/types";
+
+// Array of available nodes to connect to
+export const nodes = [
+  process.env.REACT_APP_NODE_1,
+  process.env.REACT_APP_NODE_2,
+  process.env.REACT_APP_NODE_3,
+  // process.env.REACT_APP_NODE_4,
+];
+
+// import getRpcUrl from "utils/getRpcUrl";
+const getNodeUrl = () => {
+  return sample(nodes);
+};
+
+const RPC_URL = getNodeUrl();
+console.log("rpc url =", RPC_URL);
+
+export const simpleRpcProvider = new ethers.providers.JsonRpcProvider(RPC_URL);
 
 /**
  * Provides a web3 provider with or without user's signer
