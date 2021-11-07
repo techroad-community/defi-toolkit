@@ -43,3 +43,4 @@
 // };
 
 // export default TotalStakedCell;
+export default null;

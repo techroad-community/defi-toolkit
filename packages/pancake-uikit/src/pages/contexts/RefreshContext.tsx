@@ -1,7 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React, { useState, useEffect, useRef, FC } from "react";
 
 const FAST_INTERVAL = 10000;
 const SLOW_INTERVAL = 60000;
+interface Props {
+  children: any;
+}
 
 const RefreshContext = React.createContext({ slow: 0, fast: 0 });
 
@@ -25,7 +29,7 @@ const useIsBrowserTabActive = () => {
 };
 
 // This context maintain 2 counters that can be used as a dependencies on other hooks to force a periodic refresh
-const RefreshContextProvider = ({ children }) => {
+const RefreshContextProvider: FC<Props> = ({ children }) => {
   const [slow, setSlow] = useState(0);
   const [fast, setFast] = useState(0);
   const isBrowserTabActiveRef = useIsBrowserTabActive();

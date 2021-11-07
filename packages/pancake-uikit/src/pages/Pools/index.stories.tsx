@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import noop from "lodash/noop";
+import BigNumber from "bignumber.js";
 /* eslint-disable import/no-unresolved */
 import { Meta } from "@storybook/react/types-6-0";
 import { useDispatch, useSelector } from "react-redux";
@@ -39,16 +40,26 @@ const Row = styled.div`
 const chosenPools = [
   {
     contractAddress: {
-      "56": "0xbdda50183d817c3289f895a4472eb475967dc980",
-      "96": "0xbdda50183d817c3289f895a4472eb475967dc980",
+      56: "0xbdda50183d817c3289f895a4472eb475967dc980",
+      96: "0xbdda50183d817c3289f895a4472eb475967dc980",
     },
     earningToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
       chainId: 97,
+      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
       decimals: 18,
+      symbol: "DOODA",
       name: "DoodaSwap token",
       projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
+      equals: true,
+      sortBefore: false,
+      //     equals(other: Token): boolean;
+      // /**
+      //  * Returns true if the address of this token sorts before the address of the other token
+      //  * @param other other token to compare
+      //  * @throws if the tokens have the same address
+      //  * @throws if the tokens are on different chains
+      //  */
+      // sortsBefore(other: Token): boolean;
     },
     harvest: true,
     isAutoVault: false,
@@ -56,165 +67,17 @@ const chosenPools = [
     poolCategory: "Core",
     sortOrder: 1,
     sousId: 0,
-    stakingLimit: 200,
+    stakingLimit: new BigNumber(200),
     stakingToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
       chainId: "97",
+      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
       decimals: 18,
+      symbol: "DOODA",
       name: "DoodaSwap Token",
       projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
     },
     tokenPerBlock: 10,
-    totalStaked: 50,
-    userData: {
-      allowance: 200,
-      pendingReward: 20,
-      stakedBalance: 50,
-      stakingTokenBalance: 400,
-    },
-  },
-  {
-    contractAddress: {
-      "56": "0xbdda50183d817c3289f895a4472eb475967dc980",
-      "96": "0xbdda50183d817c3289f895a4472eb475967dc980",
-    },
-    earningToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: 97,
-      decimals: 18,
-      name: "DoodaSwap token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    harvest: true,
-    isAutoVault: false,
-    isFinished: false,
-    poolCategory: "Core",
-    sortOrder: 1,
-    sousId: 0,
-    stakingLimit: 200,
-    stakingToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: "97",
-      decimals: 18,
-      name: "DoodaSwap Token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    tokenPerBlock: 10,
-    totalStaked: 50,
-    userData: {
-      allowance: 200,
-      pendingReward: 20,
-      stakedBalance: 50,
-      stakingTokenBalance: 400,
-    },
-  },
-  {
-    contractAddress: {
-      "56": "0xbdda50183d817c3289f895a4472eb475967dc980",
-      "96": "0xbdda50183d817c3289f895a4472eb475967dc980",
-    },
-    earningToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: 97,
-      decimals: 18,
-      name: "DoodaSwap token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    harvest: true,
-    isAutoVault: false,
-    isFinished: false,
-    poolCategory: "Core",
-    sortOrder: 1,
-    sousId: 0,
-    stakingLimit: 200,
-    stakingToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: "97",
-      decimals: 18,
-      name: "DoodaSwap Token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    tokenPerBlock: 10,
-    totalStaked: 50,
-    userData: {
-      allowance: 200,
-      pendingReward: 20,
-      stakedBalance: 50,
-      stakingTokenBalance: 400,
-    },
-  },
-  {
-    contractAddress: {
-      "56": "0xbdda50183d817c3289f895a4472eb475967dc980",
-      "96": "0xbdda50183d817c3289f895a4472eb475967dc980",
-    },
-    earningToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: 97,
-      decimals: 18,
-      name: "DoodaSwap token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    harvest: true,
-    isAutoVault: false,
-    isFinished: false,
-    poolCategory: "Core",
-    sortOrder: 1,
-    sousId: 0,
-    stakingLimit: 200,
-    stakingToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: "97",
-      decimals: 18,
-      name: "DoodaSwap Token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    tokenPerBlock: 10,
-    totalStaked: 50,
-    userData: {
-      allowance: 200,
-      pendingReward: 20,
-      stakedBalance: 50,
-      stakingTokenBalance: 400,
-    },
-  },
-  {
-    contractAddress: {
-      "56": "0xbdda50183d817c3289f895a4472eb475967dc980",
-      "96": "0xbdda50183d817c3289f895a4472eb475967dc980",
-    },
-    earningToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: 97,
-      decimals: 18,
-      name: "DoodaSwap token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    harvest: true,
-    isAutoVault: false,
-    isFinished: false,
-    poolCategory: "Core",
-    sortOrder: 1,
-    sousId: 0,
-    stakingLimit: 200,
-    stakingToken: {
-      address: "0xbdda50183d817c3289f895a4472eb475967dc980",
-      chainId: "97",
-      decimals: 18,
-      name: "DoodaSwap Token",
-      projectLink: "https://dev-doodaswap-frontend.vercel.app/",
-      symbol: "DOODA",
-    },
-    tokenPerBlock: 10,
-    totalStaked: 50,
+    totalStaked: new BigNumber(50),
     userData: {
       allowance: 200,
       pendingReward: 20,

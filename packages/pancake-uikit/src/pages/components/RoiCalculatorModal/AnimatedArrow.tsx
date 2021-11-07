@@ -54,3 +54,5 @@
 // };
 
 // export default AnimatedArrow;
+
+export default null;

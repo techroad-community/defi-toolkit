@@ -38,8 +38,8 @@ const NameCell: React.FC<NameCellProps> = ({ pool }) => {
   // } = useCakeVault();
   // const hasVaultShares = userShares && userShares.gt(0);
 
-  const stakingTokenSymbol = stakingToken.symbol;
-  const earningTokenSymbol = earningToken.symbol;
+  const stakingTokenSymbol = stakingToken!.symbol;
+  const earningTokenSymbol = earningToken!.symbol;
 
   // const stakedBalance = userData?.stakedBalance ? new BigNumber(userData.stakedBalance) : BIG_ZERO;
   // const isStaked = stakedBalance.gt(0);
@@ -69,7 +69,8 @@ const NameCell: React.FC<NameCellProps> = ({ pool }) => {
           <DoodaVaultTokenPairImage mr="8px" width={40} height={40} />
         </>
       ) : (
-        <TokenPairImage primaryToken={earningToken} secondaryToken={stakingToken} mr="8px" width={40} height={40} />
+        // <TokenPairImage primaryToken={earningToken!} secondaryToken={stakingToken} mr="8px" width={40} height={40} />
+        <DoodaVaultTokenPairImage mr="8px" width={40} height={40} />
       )}
       <CellContent>
         {showStakedTag && (

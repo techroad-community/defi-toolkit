@@ -41,13 +41,13 @@ import { State, DeserializedPool } from "../../../state/types";
 //   }, [account, dispatch, fastRefresh]);
 // };
 
-export const usePools = (): { pools: DeserializedPool[]; userDataLoaded: boolean } => {
-  const { pools, userDataLoaded } = useSelector((state: State) => ({
-    pools: state.pools.data,
-    userDataLoaded: state.pools.userDataLoaded,
-  }));
-  return { pools: pools.map(transformPool), userDataLoaded };
-};
+// export const usePools = (): { pools: DeserializedPool[]; userDataLoaded: boolean } => {
+//   const { pools, userDataLoaded } = useSelector((state: State) => ({
+//     pools: state.pools.data,
+//     userDataLoaded: state.pools.userDataLoaded,
+//   }));
+//   return { pools: pools.map(transformPool), userDataLoaded };
+// };
 
 // export const useFetchCakeVault = () => {
 //   const { account } = useWeb3React();
@@ -66,51 +66,59 @@ export const usePools = (): { pools: DeserializedPool[]; userDataLoaded: boolean
 //     dispatch(fetchCakeVaultFees());
 //   }, [dispatch]);
 // };
+export default null;
 
 export const useCakeVault = () => {
+  const performanceFee = new BigNumber(20);
+  const callFee = new BigNumber(40);
+  const withdrawalFee = new BigNumber(40);
+  const withdrawalFeePeriod = new BigNumber(30);
+  const isLoading = false;
+  const lastDepositedTime = "";
+  const lastUserActionTime = "";
   const {
     totalShares: totalSharesAsString,
     pricePerFullShare: pricePerFullShareAsString,
     totalCakeInVault: totalCakeInVaultAsString,
     estimatedCakeBountyReward: estimatedCakeBountyRewardAsString,
     totalPendingCakeHarvest: totalPendingCakeHarvestAsString,
-    fees: { performanceFee, callFee, withdrawalFee, withdrawalFeePeriod },
-    userData: {
-      isLoading,
-      userShares: userSharesAsString,
-      cakeAtLastUserAction: cakeAtLastUserActionAsString,
-      lastDepositedTime,
-      lastUserActionTime,
-    },
+    // fees: { performanceFee, callFee, withdrawalFee, withdrawalFeePeriod },
+    // userData: {
+    //   isLoading,
+    //   userShares: userSharesAsString,
+    //   cakeAtLastUserAction: cakeAtLastUserActionAsString,
+    //   lastDepositedTime,
+    //   lastUserActionTime,
+    // },
   } = useSelector((state: State) => state.pools.cakeVault);
 
   const estimatedCakeBountyReward = useMemo(() => {
-    return new BigNumber(estimatedCakeBountyRewardAsString);
+    return new BigNumber(estimatedCakeBountyRewardAsString!);
   }, [estimatedCakeBountyRewardAsString]);
 
   const totalPendingCakeHarvest = useMemo(() => {
-    return new BigNumber(totalPendingCakeHarvestAsString);
+    return new BigNumber(totalPendingCakeHarvestAsString!);
   }, [totalPendingCakeHarvestAsString]);
 
   const totalShares = useMemo(() => {
-    return new BigNumber(totalSharesAsString);
+    return new BigNumber(totalSharesAsString!);
   }, [totalSharesAsString]);
 
   const pricePerFullShare = useMemo(() => {
-    return new BigNumber(pricePerFullShareAsString);
+    return new BigNumber(pricePerFullShareAsString!);
   }, [pricePerFullShareAsString]);
 
   const totalCakeInVault = useMemo(() => {
-    return new BigNumber(totalCakeInVaultAsString);
+    return new BigNumber(totalCakeInVaultAsString!);
   }, [totalCakeInVaultAsString]);
 
   const userShares = useMemo(() => {
-    return new BigNumber(userSharesAsString);
-  }, [userSharesAsString]);
+    return new BigNumber(20);
+  }, []);
 
   const cakeAtLastUserAction = useMemo(() => {
-    return new BigNumber(cakeAtLastUserActionAsString);
-  }, [cakeAtLastUserActionAsString]);
+    return new BigNumber(20);
+  }, []);
 
   return {
     totalShares,

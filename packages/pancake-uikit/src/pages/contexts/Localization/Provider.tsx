@@ -14,17 +14,17 @@ const initialState: ProviderState = {
 export const languageMap = new Map<Language["locale"], Record<string, string>>();
 languageMap.set(EN.locale, translations);
 
-export const LanguageContext = createContext<ContextApi>(undefined);
+export const LanguageContext = createContext<ContextApi>(undefined!);
 
 export const LanguageProvider: React.FC = ({ children }) => {
   const [state, setState] = useState<ProviderState>(() => {
     const codeFromStorage = getLanguageCodeFromLS();
-
     return {
       ...initialState,
-      currentLanguage: languages[codeFromStorage],
+      currentLanguage: languages["en-US"],
     };
   });
+
   const { currentLanguage } = state;
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export const LanguageProvider: React.FC = ({ children }) => {
     };
 
     fetchInitialLocales();
-  }, [setState]);
+  }, []);
 
   const setLanguage = async (language: Language) => {
     if (!languageMap.has(language.locale)) {
@@ -80,7 +80,7 @@ export const LanguageProvider: React.FC = ({ children }) => {
       const translationSet = languageMap.has(currentLanguage.locale)
         ? languageMap.get(currentLanguage.locale)
         : languageMap.get(EN.locale);
-      const translatedText = translationSet[key] || key;
+      const translatedText = translationSet![key] || key;
 
       // Check the existence of at least one combination of %%, separated by 1 or more non space characters
       const includesVariable = translatedText.match(/%\S+?%/gm);

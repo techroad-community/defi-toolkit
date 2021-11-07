@@ -110,3 +110,4 @@
 // };
 
 // export default EarningsCell;
+export default null;

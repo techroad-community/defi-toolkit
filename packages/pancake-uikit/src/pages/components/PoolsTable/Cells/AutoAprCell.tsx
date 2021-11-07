@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BigNumber from "bignumber.js";
 import { Text } from "../../../../components/Text";
 import useMatchBreakpoints from "../../../../hooks/useMatchBreakpoints";
 // import { Text, useMatchBreakpoints } from '@doodaswap/uikit'
@@ -25,7 +26,7 @@ const AutoAprCell: React.FC<AprCellProps> = ({ pool }) => {
   // const { t } = useTranslation();
   // const { isMobile } = useMatchBreakpoints();
   const isMobile = false;
-
+  const stakedBalance = new BigNumber(100);
   // const {
   //   userData: { userShares },
   //   fees: { performanceFee },
@@ -44,7 +45,7 @@ const AutoAprCell: React.FC<AprCellProps> = ({ pool }) => {
         <Apr
           pool={pool}
           // stakedBalance={cakeAsBigNumber}
-          stakedBalance={100}
+          stakedBalance={stakedBalance!}
           // performanceFee={performanceFeeAsDecimal}
           performanceFee={10}
           showIcon={!isMobile}

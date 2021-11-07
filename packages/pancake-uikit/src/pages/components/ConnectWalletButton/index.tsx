@@ -10,7 +10,7 @@ const StyledConnectButton = styled(Button)`
   border-radius: 2px;
 `;
 
-const ConnectWalletButton = (props) => {
+const ConnectWalletButton = (props: any) => {
   // const { t } = useTranslation();
   // const { login, logout } = useAuth();
   // const { onPresentConnectModal } = useWalletModal(login, logout, t);

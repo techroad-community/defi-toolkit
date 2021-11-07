@@ -3,8 +3,9 @@ import addresses from "./contracts";
 import { Address } from "../state/types";
 
 export const getAddress = (address: Address): string => {
-  const chainId = process.env.REACT_APP_CHAIN_ID;
-  return address[chainId] ? address[chainId] : address[ChainId.MAINNET];
+  const chainId = process.env!.REACT_APP_CHAIN_ID;
+  // return address[chainId] ? address[chainId] : address[ChainId.MAINNET];
+  return "0xbdda50183d817c3289f895a4472eb475967dc980";
 };
 
 export const getMasterChefAddress = () => {

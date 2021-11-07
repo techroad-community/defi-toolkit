@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 
@@ -169,7 +170,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
     isAutoVault,
   } = pool;
   // const { t } = useTranslation();
-  const poolContractAddress = getAddress(contractAddress);
+  const poolContractAddress = getAddress(contractAddress!);
   const cakeVaultContractAddress = getCakeVaultAddress();
   // const { currentBlock } = useBlock();
   const currentBlock = 20;
@@ -179,8 +180,8 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
   const { shouldShowBlockCountdown, blocksUntilStart, blocksRemaining, hasPoolStarted, blocksToDisplay } =
     getPoolBlockInfo(pool, currentBlock);
 
-  const isMetaMaskInScope = !!window.ethereum?.isMetaMask;
-  const tokenAddress = earningToken.address || "";
+  // const isMetaMaskInScope = !!window.ethereum!.isMetaMask!;
+  const tokenAddress = earningToken!.address || "";
 
   // const {
   //   totalCakeInVault,
@@ -188,11 +189,11 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
   //   fees: { performanceFee },
   //   pricePerFullShare,
   // } = useCakeVault();
-  const totalCakeInVault = 100;
-  const pricePerFullShare = 18;
-  const userShares = 10;
+  const totalCakeInVault = new BigNumber(100);
+  const pricePerFullShare = new BigNumber(18);
+  const userShares = new BigNumber(10);
   // const fees : {}
-  const performanceFee = { performanceFee: 20, callFee: 30, withdrawalFee: 40, withdrawalFeePeriod: 50 };
+  const performanceFee: any = { performanceFee: 20, callFee: 30, withdrawalFee: 40, withdrawalFeePeriod: 50 };
   const stakingTokenBalance = userData?.stakingTokenBalance ? new BigNumber(userData.stakingTokenBalance) : BIG_ZERO;
   const stakedBalance = userData?.stakedBalance ? new BigNumber(userData.stakedBalance) : BIG_ZERO;
   const { cakeAsBigNumber } = convertSharesToCake(userShares, pricePerFullShare);
@@ -208,24 +209,23 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
       return getBalanceNumber(totalCakeInVault, stakingToken?.decimals);
     }
     if (isManualCakePool) {
-      const manualCakeTotalMinusAutoVault = new BigNumber(totalStaked).minus(totalCakeInVault);
+      const manualCakeTotalMinusAutoVault = new BigNumber(totalStaked!).minus(totalCakeInVault);
       return getBalanceNumber(manualCakeTotalMinusAutoVault, stakingToken?.decimals);
     }
-    return getBalanceNumber(totalStaked, stakingToken?.decimals);
+    return getBalanceNumber(totalStaked!, stakingToken?.decimals);
   };
 
   const {
     targetRef: totalStakedTargetRef,
     tooltip: totalStakedTooltip,
     tooltipVisible: totalStakedTooltipVisible,
-  } = useTooltip(
-    "Total amount of %symbol% staked in this",
-    pool,
-    { symbol: stakingToken?.symbol },
-    {
-      placement: "bottom",
-    }
-  );
+  } = useTooltip("Total amount of %symbol% staked in this", { placement: "bottom" });
+  // "Total amount of %symbol% staked in this",
+  // pool,
+  // { symbol: stakingToken?.symbol },
+  // {
+  //   placement: "bottom",
+  // }
 
   const manualTooltipText = "You must harvest and compound your earnings from this pool manually.";
   const autoTooltipText =
@@ -251,7 +251,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
       <Flex mb="8px" justifyContent="space-between">
         <Text>{hasPoolStarted ? "Ends in" : "Starts in"}:</Text>
         <Flex>
-          <Link external href={getBscScanLink(hasPoolStarted ? endBlock : startBlock, "countdown")}>
+          <Link external href={getBscScanLink(hasPoolStarted! ? endBlock! : startBlock!, "countdown")}>
             <Balance fontSize="16px" value={blocksToDisplay} decimals={0} color="primary" />
             <Text ml="4px" color="primary" textTransform="lowercase">
               Blocks

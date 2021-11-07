@@ -5,7 +5,7 @@ import { BlockState } from "../types";
 
 const initialState: BlockState = { currentBlock: 0, initialBlock: 0 };
 
-export const blockSlice = createSlice({
+export const blockSlice: any = createSlice({
   name: "Block",
   initialState,
   reducers: {

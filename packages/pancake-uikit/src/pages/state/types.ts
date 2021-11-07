@@ -1,3 +1,5 @@
+import { BigNumber } from "bignumber.js";
+
 export enum PoolCategory {
   "COMMUNITY" = "Community",
   "CORE" = "Core",
@@ -98,8 +100,8 @@ export interface DeserializedPool {
   harvest?: boolean;
   isFinished?: boolean;
   enableEmergencyWithdraw?: boolean;
-  totalStaked?: number;
-  stakingLimit?: number;
+  totalStaked?: BigNumber;
+  stakingLimit?: BigNumber;
   userData?: {
     allowance: number;
     stakingTokenBalance: number;

@@ -77,7 +77,7 @@ const AutoHarvestAction: React.FunctionComponent<AutoHarvestActionProps> = ({ us
       </ActionContainer>
     );
   }
-
+  const performanceFeeTemp = (performanceFee as any) % 100;
   return (
     <ActionContainer isAutoVault>
       <ActionTitles>{actionTitle}</ActionTitles>
@@ -119,7 +119,7 @@ const AutoHarvestAction: React.FunctionComponent<AutoHarvestActionProps> = ({ us
             </TooltipText>
             <Flex alignItems="center">
               <Text ml="4px" small>
-                {performanceFee / 100}%
+                {performanceFeeTemp}%
               </Text>
             </Flex>
           </Flex>

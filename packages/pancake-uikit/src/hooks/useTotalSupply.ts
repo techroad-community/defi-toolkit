@@ -1,4 +1,4 @@
-// import { BigNumber } from "@ethersproject/bignumber";
+import { BigNumber } from "bignumber.js";
 // import { Token, TokenAmount } from "@doodaswap/sdk";
 // import { useTokenContract } from "./useContract";
 // import { useSingleCallResult } from "../state/multicall/hooks";
@@ -14,3 +14,4 @@
 // }
 
 // export default useTotalSupply;
+export default null;
