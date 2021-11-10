@@ -88,7 +88,7 @@ const defaultProps = {
   currentLang: "EN",
   cakePriceUsd: 0.023158668932877668,
   links,
-  subLinks: links[0].items,
+  subLinks: links[2].items,
   footerLinks,
   profile: null,
   userMenu: <UserMenuComponent account="0xbdda50183d817c3289f895a4472eb475967dc980" />,
@@ -97,6 +97,7 @@ const defaultProps = {
   activeSubItem: "https://exchange.pancakeswap.finance",
   buyCakeLabel: "Buy CAKE",
 };
+const { subLinks } = defaultProps;
 
 const ConnectedTemplate: React.FC<NavProps> = (args) => {
   return (
@@ -127,7 +128,7 @@ const ConnectedTemplate: React.FC<NavProps> = (args) => {
 export const Connected = ConnectedTemplate.bind({});
 Connected.args = defaultProps;
 
-export const NotConnected: React.FC = () => {
+export const NotConnected: React.FC<NavProps> = (args) => {
   return (
     <BrowserRouter>
       <Menu
@@ -137,7 +138,7 @@ export const NotConnected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
-        subLinks={subLinks}
+        // subLinks={subLinks}
         footerLinks={footerLinks}
       >
         <div>
@@ -168,7 +169,7 @@ export const WithoutConnectButton: React.FC = () => {
         currentLang="EN"
         links={links}
         footerLinks={footerLinks}
-        subLinks={subLinks}
+        // subLinks=""
       >
         <div>
           <h1>No connect button on top</h1>

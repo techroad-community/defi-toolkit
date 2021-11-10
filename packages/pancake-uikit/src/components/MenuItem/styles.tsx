@@ -8,7 +8,7 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
     $isActive &&
     $variant === "subMenu" &&
     `
-      padding: 10px 5rem;
+      padding: 10px 4rem;
       text-align:center;
       background: #3763A4;
       border-radius: 2px;
@@ -27,7 +27,7 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
     !$isActive &&
     $variant === "subMenu" &&
     `
-      padding: 10px 5rem;
+      padding: 10px 4rem;
       text-align:center;
       background: #fff;
       border-radius: 2px;
@@ -52,7 +52,7 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   color: ${({ theme, $isActive, $variant }) => (!$isActive && $variant !== "default" ? theme.colors.doodaDark : "")};
 
   border-bottom: ${({ theme, $isActive }) => ($isActive ? `3px solid ${theme.colors.doodaPrimary}` : "0px")};
-  opacity: ${({ $isActive, $variant }) => ($isActive || $variant === "subMenu" ? "1" : "0.3")};
+  opacity: ${({ $isActive, $variant }) => ($isActive || $variant === "subMenu" ? "1" : "0.6")};
   font-size: 16px;
   font-weight: ${({ $isActive, $variant }) => ($isActive && $variant === "default" ? "600" : "400")};
   ${({ $statusColor, theme }) =>
