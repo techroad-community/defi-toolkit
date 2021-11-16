@@ -13,6 +13,7 @@ export const blockSlice: any = createSlice({
         state.initialBlock = action.payload;
       }
 
+      // comment
       // eslint-disable-next-line no-param-reassign
       state.currentBlock = action.payload;
     },
