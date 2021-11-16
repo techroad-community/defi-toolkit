@@ -52,14 +52,14 @@ const chosenPools = [
       projectLink: "https://dev-doodaswap-frontend.vercel.app/",
       equals: true,
       sortBefore: false,
-      //     equals(other: Token): boolean;
+      // equals(other: Token): boolean;
       // /**
       //  * Returns true if the address of this token sorts before the address of the other token
       //  * @param other other token to compare
       //  * @throws if the tokens have the same address
       //  * @throws if the tokens are on different chains
       //  */
-      // sortsBefore(other: Token): boolean;
+      // sortsBefore(other: Token): boolean;,
     },
     harvest: true,
     isAutoVault: false,
@@ -93,10 +93,15 @@ export enum ViewMode {
 export default {
   title: "Pages/Pools",
   // component: Pools,
-  argTypes: {},
+  argTypes: {
+    address: {
+      options: ["56", "98"],
+      control: { type: "select" },
+    },
+  },
 } as Meta;
 
-export const Default: React.FC = () => {
+const Default: React.FC<any> = (args) => {
   //   const [viewMode, setViewMode] = useState<Enumerator>("LIST");
   const [viewMode, setViewMode] = useState(undefined);
   const [query, setQuery] = useState("");
@@ -190,6 +195,9 @@ export const Default: React.FC = () => {
     </>
   );
 };
+
+export const ConnectPool = Default.bind({});
+ConnectPool.args = chosenPools;
 
 const handleClick = noop;
 
